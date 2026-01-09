@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="maynu">
+            <li><a href="#" class="btn">Home</a></li>
+            <li><a href="#" class="btn">Information</a></li>
+            <li><a href="#" class="btn">Electricity bill calculation</a></li>
+            <li><a href="#" class="btn">About</a></li>
+
+            <div class="input_text">
+                <input type="text" placeholder="Search...">
+            </div>
+        </ul>
+    </header>
+
+    <section class="home">
+        <div class="home-text">
+            <h1>Check Your Electricity Bill in Seconds!</h1>
+            <h3>Simply enter your previous and current meter readings to calculate your monthly cost based on the latest
+                rates.</h3>
+            <a href="#" class="button">Calculate Now</a>
+        </div>
+    </section>
+
+    <section class="Why-Use-Our-Calculator">
+        <h1>Why Use Our Calculator?</h1>
+        <div class="box-yai">
+            <div class="box-card">
+                <h3>Always Precise</h3>
+                <div class="img-container"><img src="img/Always.png" alt=""></div>
+                <h5>Our system is updated with the latest government electricity tariffs to ensure every kip is
+                    calculated correctly.</h5>
+            </div>
+
+            <div class="box-card">
+                <h3>Completely Free</h3>
+                <div class="img-container"><img src="img/Free.png" alt=""></div>
+                <h5>Access all calculation features without any hidden costs or subscription fees. Simple and
+                    transparent.</h5>
+            </div>
+
+            <div class="box-card">
+                <h3>No Sign-up Needed</h3>
+                <div class="img-container"><img src="img/Sign-up.png" alt=""></div>
+                <h5>Start calculating immediately No personal data or accounts are required to get your results.</h5>
+            </div>
+        </div>
+    </section>
+    <section class="Our_Features">
+        <h1> Our Features</h1>
+        <div class="box-yai-our">
+            <div class="box-noy-our">
+                <div class="img-our"><img src="img/Always-Current-Tariffs.png" alt=""></div>
+                <div class="text-our">
+                    <h3>Always Current Tariffs</h3>
+                    <h4> Our calculator uses the absolute latest electricity rates and step-pricing structures provided
+                        by the government.</h4>
+                </div>
+            </div>
+            <div class="box-noy-our">
+                <div class="img-our"><img src="img/Transparent-Breakdown.png" alt=""></div>
+                <div class="text-our">
+                    <h3>Transparent Breakdown</h3>
+                    <h4> See exactly how your bill is calculated, from each pricing tier to the total amount, giving you
+                        full clarity.</h4>
+                </div>
+            </div>
+            <div class="box-noy-our">
+                <div class="img-our"><img src="img/Access-Anywhere-Anytime.png" alt=""></div>
+                <div class="text-our">
+                    <h3>Access Anywhere, Anytime</h3>
+                    <h4> Our website is fully responsive, allowing you to calculate your electricity bill seamlessly on
+                        any device, even on the go.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Ready-to-check-your-bill">
+        <div class="text-Ready-to-check-your-bill">
+            <div class="text-Ready">
+                <h1>Ready to check your bill?</h1>
+                <h4>Start calculating now and take control of your <br> electricity expenses</h4>
+                <a href="#" class="button">Calculate Now</a>
+            </div>
+            <div class="img-free">
+                <img src="img/free.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="Electricity-bill-calculation">
+        <div class="text-Electricity">
+            <h1>Electricity bill calculation ʕ•ᴥ•ʔ </h1>
+        </div>
+
+        <div class="khit-lai">
+            <div class="phm-ork">
+                <p>ຈຳນວນຫົວໜ່ວຍທີ່ໃຊ້: <span id="unitsUsedDisplay">0</span></p>
+                <p>ລາຄາຄ່າໄຟຟ້າ: <span id="baseCostDisplay">0</span> ກີບ</p>
+                <p>ອາກອນມູນຄ່າເພີ່ມ (10%): <span id="vatDisplay">0</span> ກີບ</p>
+                <p class="total-line">ຍອດຈ່າຍສຸດທິ: <span id="finalDisplay">0</span> ກີບ</p>
+            </div>
+
+            <form class="calculation-form">
+                <input type="number" id="inputNumber" placeholder="ຈໍານວນໄຟຟ້າທີໃຊ້ໄປເກົ່າ" required>
+                <input type="number" id="inputNumber1" placeholder="ຈໍານວນໄຟຟ້າທີໃຊ້ໄປໃຫມ່" required>
+
+                <button onclick="calculateAndAlert()" class="btn-calculate" type="button">
+                    ໃສ່ຄ່າເບິດແລ້ວລະກົດບ່ອນນີ້
+                </button>
+            </form>
+        </div>
+    </section>
+    <section class="About">
+        <div class="About-text">
+            <h1>About</h1>
+            <h2>Mr Palami Phommaly</h2>
+            <p>Hello! My nickname is No. I am a Junior Front-end Developer who is full of enthusiasm for learning new things, and I also have a foundation in HTML, CSS, and JavaScript. Currently, I am interested in using tools such as: Tailwind CSS, Bootstrap, SASS/LESS, and Git/GitHub.</p>
+        </div>
+        <div class="img-about">
+            <img src="img/About.jpeg" alt="About Profile">
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +856 20 58787788</p>
+                <p><i class="fa-solid fa-location-dot"></i> Vientiane, Lao PDR</p>
+                <p><i class="fa-solid fa-envelope"></i> Palamiphomaly@gmail.com</p>
+            </div>
+    
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Pricing Table</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">How to Use</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="khit-lai.js"></script>
+</body>
+
+</html>
